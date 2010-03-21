@@ -33,6 +33,10 @@ function _atrium_poll_context_default_contexts() {
     ),
   );
   $context->reactions = array(
+    'block' => array(
+      'blocks' => array(),
+      'layout' => 'wide',
+    ),
     'menu' => 'poll',
   );
   $context->condition_mode = 0;
