@@ -1,0 +1,21 @@
+<?php
+
+include_once('atrium_poll.features.inc');
+
+/**
+ * Implementation of hook_init().
+ */
+function atrium_poll_init() {
+  drupal_add_css(drupal_get_path('module', 'atrium_poll') . '/atrium-poll.css');
+}
+
+/**
+ * Implementation of hook_theme_registry_alter().
+ *
+ * Override the poll template files.
+ */
+function atrium_poll_theme_registry_alter(&$registry) {
+  $registry['poll_bar']['template'] = drupal_get_path('module', 'atrium_poll') . '/poll-bar';
+  $registry['poll_results_block']['template'] = drupal_get_path('module', 'atrium_poll') . '/poll-results-block';
+  $registry['poll_results']['template'] = drupal_get_path('module', 'atrium_poll') . '/poll-results';
+}

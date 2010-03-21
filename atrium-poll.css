@@ -1,0 +1,76 @@
+/* Add the icon to the feature-menu and activity steam */
+#features-menu li a.icon-poll span.icon {
+  background: url(atrium_poll-icon.png) no-repeat;
+}
+td.views-field span.feature-atrium_poll {
+  background: url(atrium_poll-icon.png) no-repeat 0 -40px;
+}
+
+
+/* Move some poll stuff around, re-do colors, and better positioning */
+.poll .text {
+  font-weight: bold;
+}
+.poll .bar {
+  height: 2em;
+  border: 1px solid #ccc;
+}
+.poll .bar .foreground {
+  background: #ddd;
+  float: left;
+  height: 2em;
+}
+.poll .percent {
+  font-weight: bold;
+  width: 20%;
+  position: relative;
+  top: -1.9em;
+  padding-left: 5px;
+}
+.poll .votes {
+  float: right;
+  position: relative;
+  top: -1.9em;
+  padding-right: 5px;
+}
+.poll .total {
+  float: right;
+  padding: 10px 0;
+}
+.poll #edit-vote,
+.poll #edit-submit {
+  margin-top: 1em;
+}
+.poll .vote-form .form-option {
+  padding: 5px 0;
+}
+
+/* Add a bit more space in between polls and kill the hover color */
+.view-atrium-poll table {
+  background: none;
+  border: 0;
+}
+
+.view-atrium-poll table td {
+  padding: 7px 15px;
+  border: 0;
+}
+.view-atrium-poll table tr:hover td {
+  background: none;
+}
+
+ul.multistep li.active-step,
+.form-text:focus,
+.form-textarea:focus,
+.form-select:focus,
+.prose a:hover,
+table tr:hover td,
+table td.active,
+div.block table tr.active,
+div.block ul.menu a:hover { background-color:#ecf4f8; }
+
+
+/* Override atrium-default display: inline for form-items in right sidebar */
+#right .block .poll div.form-item {
+  display: block;
+}
