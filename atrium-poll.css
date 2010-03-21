@@ -2,10 +2,10 @@
 #features-menu li a.icon-poll span.icon {
   background: url(atrium_poll-icon.png) no-repeat;
 }
-td.views-field span.feature-atrium_poll {
+td.views-field span.feature-atrium_poll,
+div#block-atrium-create li.atrium_poll-poll .spaces-feature {
   background: url(atrium_poll-icon.png) no-repeat 0 -40px;
 }
-
 
 /* Move some poll stuff around, re-do colors, and better positioning */
 .poll .text {
